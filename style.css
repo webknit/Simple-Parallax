@@ -1,6 +1,70 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}caption,th{text-align:left;}q:before,q:after{content:'';}abbr,acronym{border:0;}
 
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
 .main-body {
-	margin: 2em auto 0;
-	max-width: 700px;
+	margin: 0em auto 0;
+}
+
+.section {
+	height: 600px;
+	overflow: hidden;
+	padding: 30px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.img-section-zero {
+	padding: 0;
+}
+
+.section h1 {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+}
+
+.img-section-zero h1 {
+	color: white;
+}
+
+.img {
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.img-zero {
+	background-image: url(img/1.jpg);
+}
+
+.img-one {
+	background-image: url(img/1.jpg);
+}
+
+.img-two {
+	background-image: url(img/2.jpg);
+}
+
+.img-three {
+	background-image: url(img/3.jpg);
+}
+
+.img-four {
+	background-image: url(img/4.jpg);
 }
